@@ -1,0 +1,559 @@
+<html><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<title>Сетевой Город. Образование. Дневник</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="10">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/gif" href="/images/Common/faviconnetcity.gif">
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap3-dialog/css/bootstrap-dialog.min.css">
+	<link rel="stylesheet" type="text/css" href="/vendor/select2/css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/vendor/select2/css/select2-bootstrap.min.css">
+
+	
+		<link rel="stylesheet" type="text/css" href="/static/dist/common/css/core-styles.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/dist/common/css/theme-school.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/vendor/custom/fonts/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="/vendor/components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/vendor/bootstrap3-dialog/js/bootstrap-dialog.min.js" type="text/javascript"></script>
+	<script src="/js/libs/bowser.min.js" type="text/javascript"></script>
+	<script src="/vendor/components/handlebars/handlebars.min.js" type="text/javascript"></script>
+	<script src="/vendor/components/underscore/underscore-min.js" type="text/javascript"></script>
+	<script src="/vendor/components/moment/min/moment.min.js" type="text/javascript"></script>
+	<script src="/vendor/components/moment/locale/ru.js" type="text/javascript"></script>
+
+	
+	<script src="/static/dist/lng/language_ru.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/static/dist/lng/language_ru_2.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/static/dist/common/js/core-scripts.js?ver=4.50.48300" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		var appContext = {
+			now: "06.12.2019 12:41:56",
+			productName: "Сетевой Город. Образование",
+			version: "4.50.48300",
+			serverId: "6FA2C7AD-9B67-4855-BAF1-6E7E5BB7BB4F",
+			isTkr: false,
+			serverTimeZone: 3,
+			environment: "prod"
+		};
+	</script>
+		
+	<script type="text/javascript">
+		var strATTok = "0577637112329111307439383";
+		var bReadonly = false;
+		var pageVer = 1575636116;
+		var wasSavedMsg = "";
+		appContext.at = "0577637112329111307439383";
+		appContext.readOnly = false;
+		appContext.funcType = 2;
+		
+		appContext.roles = [5];
+		appContext.rights = [15,24,25,27,28,35,56,78];
+		appContext.tokenTimeOut = 1800000;
+		
+		appContext.hasAnyRight = function (checkRights){
+			return _.intersection(appContext.rights, checkRights).length > 0;
+		}
+		appContext.hasRights = function(checkRights){
+			var res = _.intersection(appContext.rights, checkRights).length === checkRights.length;
+			return res;
+		}
+	</script>
+	
+	<script type="text/javascript">
+		var dom=(document.getElementById)? true: false;
+		var ie4=(!dom && document.all)? true: false;
+		var ie5=(dom && document.all)? true: false;
+		var ie=(ie4 || ie5)
+		var opera=(dom && navigator.appName == "Opera")? true : false;
+
+		var wndAltPrintVersion = null;
+		var isMainWindow = true;
+
+		(function() {
+			appContext.fullSchoolName = "Муниципальное бюджетное общеобразовательное учреждение города Костромы \"Лицей № 17\"";
+			appContext.currYear = "2019/2020";
+			appContext.userId = "85883";
+			appContext.dateFormat = "dd\001mm\001yyyy\001.";
+			appContext.timeFormat = "hh\001mm\001:\001\001";
+			appContext.globalYearId = 19;
+			
+			
+			appContext.isEmForSchool = false;
+			appContext.fullSchoolName = "Муниципальное бюджетное общеобразовательное учреждение города Костромы \"Лицей № 17\"";
+			appContext.currYear = "2019/2020";
+			appContext.yearId = "75550";
+			appContext.schoolId = "428";
+			
+		})();
+
+		function ShowAnnouncements() {
+			checkForChanges().then(function () {
+				if (appContext.schoolId) {
+					postTo("/angular/school/announcements/");
+				}
+				else {
+					postTo("/angular/em/announcements/");
+				}
+				
+			});
+		}
+
+		
+		function ShowForum() {
+			openPopupWindow("_forum", "/asp/Forum/Forum.asp", 950, 660)
+		}
+		
+	
+		function changeYear(yearId) {
+			checkForChanges().then(function(){
+				postTo("/asp/SetupSchool/ChangeYear.asp", { SCHOOLYEARID: yearId })
+			});
+		}
+
+		function openPersonalSettings() {
+			checkForChanges().then(function(){
+				postTo("/asp/MySettings/MySettings.asp?AT=0577637112329111307439383", {UID: appContext.userId});
+			});
+		}
+
+		function initSignalR() {
+			deferredResLoader.loadJsScript("/js/libs/signalr/jquery.signalR-2.2.0.min.js")
+				.then(function(){return deferredResLoader.loadJsScript("/webapi/signalr/hubs")})
+				.then(function(){
+					$.connection.hub.qs = { "at" : appContext.at };
+					var notices = $.connection.systemNoticesHub;
+			
+					notices.client.handleSysNotice = function(message) {
+						alert(message);
+					};
+
+					$.connection.hub.start().done();
+				});
+		}
+	</script>
+
+
+	<script><!--
+	
+	function ShowHelp() {
+		openPopupWindow("_help", "/Help/angular.htm", 950, 660)
+	}
+	//--></script>
+
+	<base href="/angular/school/studentdiary/">
+	<style>
+		.ns-cloak {
+		  display: none !important;
+		}
+	</style>
+	<script src="/static/dist/wasm/wasm_exec.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/static/dist/common/css/ext-styles.min.css?ver=4.50.48300" type="text/css" media="screen"></head><body class="school ng-scope" onload="setFocus();setDBFree();;" onunload="" onkeypress="" onresize="" ng-controller="NetCityController">
+	<div class="header">
+
+		<!--блок правая половина "шапки"-->
+		<div class="block-personal-cabinet">
+			<div class="number-employees-in-system hidden-scr-sm hidden-scr-xs">
+				<p>6 декабря 2019 г. - В системе работает <span class="number-employees-span" id="WorkingInSystemCnt">137</span>
+					<a href="#" type="button" onclick="UpdateWorkInSystemCnt()" title="Список пользователей в сети">
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="glyphicon glyphicon-user"></span>
+					</a>
+				</p>
+			</div>
+			<ul class="pull-right">
+				<li class="switch-year-text hidden-scr-xs"><p><span class="hidden-scr-sm">текущий </span>2019/2020 <span class="hidden-scr-sm">уч.год</span></p></li>
+					<li class="separator_small"><a href="JavaScript:openPersonalSettings()"><span class="glyphicon glyphicon-user" title="Персональные настройки"></span><span class="hidden-scr-sm" title="Персональные настройки">Сахаров Максим Николаевич</span></a></li>
+				
+				<li class="no_separator"><a href="JavaScript:Logout(true);"><span class="icon-off" title="Выход"></span><span class="hidden-scr-sm">Выход</span></a></li>
+			</ul>
+		</div>
+
+		<!--логотип-->
+		<div class="block-logo">
+			<a class="logo logo-school" href="#"></a>
+			<p class="title_product">Сетевой Город. Образование</p>
+			<p class="school" title="Карточка образовательной организации" onclick="openSchoolInfo(428, false, false, false)" style="cursor: pointer;">
+				МБОУ "Лицей № 17" города Костромы
+			</p>
+		</div>
+
+		
+	<div class="btn-menu visible-scr-sm">
+		<div class="btn-menu-body">
+			<span class="icon-reorder"></span>
+		</div>
+		<div class="btn-menu-text">
+			
+		</div>
+	</div>
+	<div class="navbar navbar-default">
+		
+<nav class="navbar-inner">
+	<ul class="nav navbar-nav">
+	<li>
+		<a href="JavaScript:SetSelectedTab(218, '/angular/school/main/')" onclick="SetSelectedTab(218, '/angular/school/main/');return false;">Главная</a>
+	</li>
+				<li class="dropdown ">
+					<a data-toggle="dropdown" href="javascript:void(0);">
+						Расписание 
+					</a>
+					<ul class="dropdown-menu">
+							<li>
+		<a href="JavaScript:SetSelectedTab(9, '/asp/SetupSchool/Calendar/YearView.asp')" onclick="SetSelectedTab(9, '/asp/SetupSchool/Calendar/YearView.asp');return false;">Год</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(18, '/asp/Calendar/MonthViewS.asp')" onclick="SetSelectedTab(18, '/asp/Calendar/MonthViewS.asp');return false;">Месяц</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(19, '/asp/Calendar/WeekViewTimeS.asp')" onclick="SetSelectedTab(19, '/asp/Calendar/WeekViewTimeS.asp');return false;">Неделя</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(20, '/asp/Calendar/DayViewS.asp')" onclick="SetSelectedTab(20, '/asp/Calendar/DayViewS.asp');return false;">День</a>
+	</li>
+					</ul>
+				</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(24, '/asp/Reports/Reports.asp')" onclick="SetSelectedTab(24, '/asp/Reports/Reports.asp');return false;">Отчеты</a>
+	</li>
+				<li class="dropdown active">
+					<a data-toggle="dropdown" href="javascript:void(0);">
+						Дневник
+					</a>
+					<ul class="dropdown-menu">
+							<li class="active">
+		<a href="JavaScript:SetSelectedTab(30, '/angular/school/studentdiary/')" onclick="SetSelectedTab(30, '/angular/school/studentdiary/');return false;">Дневник</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(59, '/asp/LearnApp/EducationPortalND.asp')" onclick="SetSelectedTab(59, '/asp/LearnApp/EducationPortalND.asp');return false;">Коллекция ресурсов</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(31, '/angular/school/activities/')" onclick="SetSelectedTab(31, '/angular/school/activities/');return false;">Учебные курсы</a>
+	</li>
+					</ul>
+				</li>
+				<li class="dropdown ">
+					<a data-toggle="dropdown" href="javascript:void(0);">
+						Ресурсы
+					</a>
+					<ul class="dropdown-menu">
+							<li>
+		<a href="JavaScript:SetSelectedTab(40, '/asp/Curriculum/SchoolResources.asp')" onclick="SetSelectedTab(40, '/asp/Curriculum/SchoolResources.asp');return false;">Каталог ссылок</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(8, '/asp/SetupSchool/Resources/SchoolDocs.asp')" onclick="SetSelectedTab(8, '/asp/SetupSchool/Resources/SchoolDocs.asp');return false;">Документы</a>
+	</li>
+					</ul>
+				</li>
+				<li class="dropdown ">
+					<a data-toggle="dropdown" href="javascript:void(0);">
+						Портфолио
+					</a>
+					<ul class="dropdown-menu">
+							<li>
+		<a href="JavaScript:SetSelectedTab(51, '/angular/school/portfolio/personal')" onclick="SetSelectedTab(51, '/angular/school/portfolio/personal');return false;">Личный портфолио</a>
+	</li>
+	<li>
+		<a href="JavaScript:SetSelectedTab(52, '/angular/school/portfolio/projects')" onclick="SetSelectedTab(52, '/angular/school/portfolio/projects');return false;">Портфолио проектов</a>
+	</li>
+					</ul>
+				</li>
+	</ul>
+</nav>
+
+	</div>
+
+			<div class="slide-menu-left">&nbsp;</div>
+			<div class="slide-menu-right">&nbsp;</div>
+		
+	</div>
+	
+
+	<div class="block-content">
+		<a title="Вернуться" class="back active back" ng-class="{active: !(page.back || page.parent)}" href="javascript:void(0);" onclick="" page-back=""><span class="icon-signout"></span></a>
+		<h1 class="title" page-title="" href="javascript:void(0);"><!-- ngIf: page.parent --><!-- ngIf: page.parent --><span data-ng-bind-html="page.title" class="ng-binding"></span></h1>
+
+		
+		<!--мини-меню, расположенное в правой части главного заголовка-->
+		<ul class="top-right-menu">
+			
+	<li ng-show="context.students" class="hidden-xs ns-cloak ng-hide">
+		<div class="childs_select">
+			<div>Дети: <select class="ch_select ng-pristine ng-untouched ng-valid ng-empty" ng-options="student.nickName for student in context.students" ng-model="context.student"><option value="?" selected="selected"></option></select></div>
+		</div>
+	</li>
+	<li><a href="JavaScript:ShowAnnouncements()" onclick="ShowAnnouncements();return false" title="Объявления" style="margin-top: 0px;"><span class="icon-bullhorn"></span></a></li><li><a href="JavaScript:sys.mail.inbox()" onclick="sys.mail.inbox();return false" title="Почта"><span class="icon-envelope mail"></span></a></li><li><a href="JavaScript:ShowForum()" onclick="ShowForum();return false" title="Форум" style="font-size: 26px; margin-top: -2px;"><span class="icon-comments-alt"></span></a></li><li><a href="JavaScript:ShowHelp()" onclick="ShowHelp();return false" title="Справка"><span class="icon-question-sign"></span></a></li>
+		</ul>
+	
+	<div ng-show="context.students &amp;&amp; context.students.length > 1" class="childs_select visible-xs  ns-cloak ng-hide" ng-class="{'single': context.students.length == 1}">
+		<div>Дети: <select class="ch_select ng-pristine ng-untouched ng-valid ng-empty" ng-options="student.nickName for student in context.students" ng-model="context.student"><option value="?" selected="selected"></option></select></div>
+	</div>
+	
+
+		<!--content-->
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						
+	<div class="apploader" style="height: 412px; display: block; opacity: 1; z-index: 999;">
+		<div class="placeholder">
+			<span class="arrows"></span>
+			<span class="title">Пожалуйста, подождите...</span>
+		</div>
+	</div>
+	
+	<div>
+		<form name="refreshfix" method="post" class="hidden ng-pristine ng-valid">
+			<input type="hidden" name="at" value="0577637112329111307439383" autocomplete="off">
+			<input type="hidden" name="baseurl" value="school/studentdiary" autocomplete="off">
+			<input type="hidden" name="route" value="/" autocomplete="off">
+			<input type="hidden" name="search" autocomplete="off" value="">
+		</form>
+		<!-- ngView: -->
+	</div>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="height-footer-empty"></div>
+	</div>
+
+	
+	<form name="MenuForm" method="POST" class="ng-pristine ng-valid">
+		
+	<input type="hidden" name="LoginType" value="0" autocomplete="off">
+	<input type="hidden" name="AT" value="0577637112329111307439383" autocomplete="off">
+	<input type="hidden" name="VER" value="1575636116" autocomplete="off"><input type="hidden" name="MenuItem" value="0" autocomplete="off"><input type="hidden" name="TabItem" value="30" autocomplete="off"><input type="hidden" name="optional" value="optional" autocomplete="off">
+	</form>
+	<link rel="stylesheet" type="text/css" href="/vendor/eternicode-bootstrap-datepicker/css/datepicker_build.min.css?ver=4.50.48300">
+	<script src="/vendor/eternicode-bootstrap-datepicker/js/bootstrap-datepicker.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/vendor/eternicode-bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/js/libs/date.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/js/dateInput.js?ver=4.50.48300" type="text/javascript"></script>
+	<script type="text/javascript">
+		/*временная прокси функция на dateInput*/
+		function getDateFilterInfo(fieldName) {
+			return dateInput.getDateFilterInfo(fieldName);
+		}
+
+		/*краткий вариант конвертации строки в дату. с учетом текущих рег. настроек*/
+		function str2date( strDate ) {
+			return dateUtils.str2date(strDate);
+		}
+
+		/*краткий вариант конвертации даты в строку. с учетом текущих рег. настроек*/
+		function date2str( dtDate ) {
+			return dateUtils.date2str( dtDate );
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="/static/dist/pages/portfolio/css/portfolio.min.css?ver=4.50.48300">
+
+	<script src="/vendor/components/angular-bundle.min.js" type="text/javascript"></script>
+	<script src="/vendor/components/ng-file-upload/ng-file-upload.js" type="text/javascript"></script>
+	<script src="/vendor/components/angular-ui-tree/dist/angular-ui-tree.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/vendor/components/angular-ui-tree/dist/angular-ui-tree.min.css">
+	<script src="/js/libs/angular-locale/angular-locale_ru-ru.js" type="text/javascript"></script>
+
+	
+
+	<script type="text/javascript">
+		var bodyClone = $('body').clone();
+		$(function(){
+			angular.element(".block-content").find("h1.title").attr("page-title", "");
+			angular.element(".block-content").find("a.back").attr("href","").attr("onclick","").attr("page-back", "");
+
+			//временно закомментировано, до реализации отрисовки меню в angular
+			//angular.element(".navbar-inner").attr("ns-menu", "").attr("menu-ctx", "menuCtx");
+			var module = "irtech.netcity.school.studentdiary";
+			window.route = "/";
+			angular.element("body")
+				.attr("ng-controller", "NetCityController")
+				//.attr("ng-app", module)
+			;
+
+			//angular.element("#header").attr("ng-if", "!page.screenSimple");
+			angular.bootstrap(angular.element("body"), [module]);
+
+			//перключение модуля, без перезагрузки страницы
+			function switchModule(app, moduleName){
+				var js = "/static/dist/app/" + app + "/app-bundle.js";
+				deferredResLoader.loadJsScript(js).then(function(){
+					$("body").replaceWith(bodyClone.clone());
+					angular.element(".block-content").find("h1.title").attr("page-title", "");
+					$("base").attr("href", "/angular/" + app + "/");
+					angular.bootstrap(angular.element("body"), [moduleName]);
+				});
+			}
+		});
+
+	</script>
+
+	<script type="text/javascript">
+		var context = {
+			app: "school/studentdiary",
+			route: "/",
+			search: "",
+			tabItem: 30,
+			menuItem: 0,
+			roles: [5],
+			rights: [15,24,25,27,28,35,56,78]
+		};
+
+		
+
+		$(function(){
+			document.forms.refreshfix.search.value = context.search;
+		})
+	</script>
+
+	<script src="/vendor/components/angular-ui-select/dist/select.min.js" type="text/javascript"></script>
+	<link href="/vendor/components/angular-ui-select/dist/select.min.css" rel="stylesheet" type="text/css">
+
+	<script src="/static/dist/app/app-common-bundle.js?ver=4.50.48300" type="text/javascript"></script>
+	<script src="/static/dist/app/school/studentdiary/app-bundle.js?ver=4.50.48300" type="text/javascript"></script>
+
+	<script src="/vendor/components/angular-bootstrap/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+
+	<script src="/js/fileUpload-bundle.js?ver=4.50.48300" type="text/javascript"></script>
+
+
+
+	<!--TODO. убрать стили в портфолио или общие-->
+	<style>
+		.doc-item .doc-type {
+			display: block;
+			margin: 8px 0 7px 0;
+			position: relative;
+			padding-left: 45px;
+			color: black;
+		}
+
+		.doc-item .doc-type:before {
+			position: absolute;
+			width: 18px;
+			height: 25px;
+			left: 0;
+			content: '';
+			border: solid 2px #920035;
+		}
+
+		.doc-item .doc-type .fileCorner {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 0 0 8px;
+			border-color: white transparent transparent #920035;
+			position: absolute;
+			top: 0px;
+			left: 10px;
+		}
+
+		dl.doc-item{
+			margin: 0px;
+		}
+
+		dd.doc-data {
+			margin-left: 30px;
+		}
+
+		.doc-item .doc-type:after {
+			content: 'file';
+			content: attr(fileExt);
+			left: -4px;
+			padding: 0px 2px;
+			text-align: right;
+			line-height: 1.3;
+			position: absolute;
+			background-color: #000;
+			color: #fff;
+			font-size: 7px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			top: 10px;
+		}
+	</style>
+
+	<div id="modals-holder"></div>
+	
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function () {
+					var id = 28935260;
+					try {
+						var appParams = {
+							install: w.location.host
+						};
+
+						if (typeof(appContext) != "undefined") {
+							appParams.productName = appContext.productName;
+							appParams.version = appContext.version;
+							appParams.ooType = "Общеобразовательная";
+							appParams.ooName = "Муниципальное бюджетное общеобразовательное учреждение города Костромы \"Лицей № 17\"".toLowerCase();
+							appParams.role = "Родитель";
+							appParams.serverId = appContext.serverId;
+							appParams.environment = appContext.environment;
+						}
+
+						var metricaArgs = {
+							id: id,
+							accurateTrackBounce: true,
+							ut: "noindex",
+							params: appParams
+						}
+
+						var metrikaCtrl = new Ya.Metrika(metricaArgs);
+						w["yaCounter" + id] = metrikaCtrl;
+						var yaCounterCode = "";
+						appContext.yaCounters = [metrikaCtrl];
+						if (yaCounterCode) { 
+							metricaArgs.id = +yaCounterCode; 
+							var addMetrikaCtrl =  new Ya.Metrika(metricaArgs); 
+							w["yaCounter" + yaCounterCode] = addMetrikaCtrl;
+							appContext.yaCounters.push(addMetrikaCtrl);
+						}
+						
+					} catch(e) {}
+				});
+ 
+				var n = d.getElementsByTagName("script")[0];
+
+				var f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+
+				var s = d.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+ 
+				//if (w.opera == "[object Opera]") {
+				//	d.addEventListener("DOMContentLoaded", f, false);
+				//} else {
+				//	f();
+				//}
+				deferredResLoader.ready(f);
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<!-- /Yandex.Metrika counter -->
+		
+
+<div class="footer">
+	
+	<a class="logo-footer" href="#"></a>
+	<div class="block-debug-information">
+	<p class="p-line-height-09 p-font-weight-900">Сетевой Город. Образование &nbsp;4.50.48300.145 &nbsp;19.09.2019</p>	
+	<p class="debug_information">Exec time: 0,078c / 06.12.2019 12:41:56 &nbsp;<span>БД - рабочая</span>
+	</p>
+	<p class="p-line-height-09">© 2007-2019 ИРТех, г. Самара. Все права защищены</p>	
+	</div>
+</div>
+
+			
+</body></html>
